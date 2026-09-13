@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to dev.fathom — a simple static landing page boilerplate."
+    />
+    <title>dev.fathom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="dev.fathom brand">
+          <span class="brand-mark">f</span>
+          <span class="brand-name">dev.fathom</span>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cta-button" type="button">Get Started</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Welcome to your new digital home</p>
+            <h1>Build smarter experiences with <span>dev.fathom</span>.</h1>
+            <p class="subtitle">
+              A clean, modern starter site for your next idea. Launch quickly,
+              present clearly, and grow with confidence.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary" type="button">Explore More</button>
+              <button class="secondary" type="button">View Demo</button>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Key statistics">
+              <li>
+                <strong>24/7</strong>
+                <span>Always ready</span>
+              </li>
+              <li>
+                <strong>Fast</strong>
+                <span>Lightweight launch</span>
+              </li>
+              <li>
+                <strong>Modern</strong>
+                <span>Clean design</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="Feature preview card">
+            <div class="panel-window">
+              <div class="window-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="window-body">
+                <div class="metric-card">
+                  <p>Performance</p>
+                  <h2>98%</h2>
+                  <div class="bar">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="mini-grid">
+                  <div class="mini-box accent"></div>
+                  <div class="mini-box"></div>
+                  <div class="mini-box dark"></div>
+                  <div class="mini-box light"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="feature-grid" aria-label="Feature overview">
+          <article class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Fast Setup</h3>
+            <p>Start from a clean foundation and move quickly with no clutter.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">🎯</div>
+            <h3>Clear Messaging</h3>
+            <p>Focus on the value you provide with a straightforward layout.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">🚀</div>
+            <h3>Ready to Launch</h3>
+            <p>Designed to scale into a stronger product or portfolio presence.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer id="contact" class="footer">
+        <p>© <span id="year"></span> dev.fathom</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
