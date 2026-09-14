@@ -4,20 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  const buttons = document.querySelectorAll('button');
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      button.animate(
-        [
-          { transform: 'scale(1)' },
-          { transform: 'scale(0.98)' },
-          { transform: 'scale(1)' }
-        ],
-        {
-          duration: 180,
-          easing: 'ease-out'
-        }
-      );
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  const setTheme = (theme) => {
+    body.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+  };
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = body.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      setTheme(currentTheme);
     });
-  });
+  }
+
+  setTheme(body.getAttribute('data-theme') || 'dark');
 });

@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Welcome to dev.fathom — a simple static landing page boilerplate."
+      content="Branding direction board for dev.fathom — type and color exploration in light and dark mode."
     />
-    <title>dev.fathom</title>
+    <title>dev.fathom | Brand Direction Board</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-theme="dark">
     <div class="page-shell">
       <header class="topbar">
         <div class="brand" aria-label="dev.fathom brand">
@@ -25,93 +22,274 @@
         </div>
 
         <nav class="nav" aria-label="Main navigation">
-          <a href="#features">Features</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <a href="#colors">Colors</a>
+          <a href="#type-showcase">Fonts</a>
+          <a href="#copy">Messaging</a>
         </nav>
 
-        <button class="cta-button" type="button">Get Started</button>
+        <button id="themeToggle" class="toggle-btn" type="button" aria-label="Toggle light and dark mode">
+          Light mode
+        </button>
       </header>
 
       <main>
         <section class="hero">
           <div class="hero-copy">
-            <p class="eyebrow">Welcome to your new digital home</p>
-            <h1>Build smarter experiences with <span>dev.fathom</span>.</h1>
+            <p class="eyebrow">Brand direction board</p>
+            <h1>Design a cleaner, greener future for your product.</h1>
             <p class="subtitle">
-              A clean, modern starter site for your next idea. Launch quickly,
-              present clearly, and grow with confidence.
+              A live sample board for typography, tone, and color exploration.
+              The current direction leans toward a Rolex-inspired green with a
+              refined fintech aesthetic and flexible accent pairings.
             </p>
 
-            <div class="hero-actions">
-              <button class="primary" type="button">Explore More</button>
-              <button class="secondary" type="button">View Demo</button>
+            <div class="chip-row" aria-label="branding tags">
+              <span class="chip">Rolex green</span>
+              <span class="chip">Dark mode</span>
+              <span class="chip">Fintech clarity</span>
             </div>
-
-            <ul class="hero-metrics" aria-label="Key statistics">
-              <li>
-                <strong>24/7</strong>
-                <span>Always ready</span>
-              </li>
-              <li>
-                <strong>Fast</strong>
-                <span>Lightweight launch</span>
-              </li>
-              <li>
-                <strong>Modern</strong>
-                <span>Clean design</span>
-              </li>
-            </ul>
           </div>
 
-          <div class="hero-panel" aria-label="Feature preview card">
-            <div class="panel-window">
-              <div class="window-header">
-                <span></span>
-                <span></span>
-                <span></span>
+          <aside class="hero-card" aria-label="brand recommendation panel">
+            <div class="mini-label">Recommended direction</div>
+            <div class="signal" aria-label="primary green swatch">
+              <span class="signal-swatch"></span>
+              <div>
+                <strong>Forest Mint</strong>
+                <small>#2D6A52</small>
               </div>
-              <div class="window-body">
-                <div class="metric-card">
-                  <p>Performance</p>
-                  <h2>98%</h2>
-                  <div class="bar">
-                    <span></span>
+            </div>
+            <div class="stat-list">
+              <div>
+                <span>Primary</span>
+                <strong>Green</strong>
+              </div>
+              <div>
+                <span>Accent</span>
+                <strong>Warm ivory</strong>
+              </div>
+              <div>
+                <span>Tone</span>
+                <strong>Elevated</strong>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="colors" class="palette-section">
+          <div class="section-heading">
+            <p class="section-tag">Color palette</p>
+            <h2>Light and dark mode comparisons</h2>
+          </div>
+
+          <div class="palette-grid">
+            <article class="palette-panel light-panel">
+              <div class="panel-head">
+                <h3>Light mode</h3>
+                <span>Clean / premium</span>
+              </div>
+
+              <div class="swatch-group">
+                <div class="swatch-card">
+                  <span class="swatch swatch-ivory"></span>
+                  <div>
+                    <strong>Ivory</strong>
+                    <small>#F4F3EE</small>
                   </div>
                 </div>
-                <div class="mini-grid">
-                  <div class="mini-box accent"></div>
-                  <div class="mini-box"></div>
-                  <div class="mini-box dark"></div>
-                  <div class="mini-box light"></div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-green-light"></span>
+                  <div>
+                    <strong>Green</strong>
+                    <small>#6EA98B</small>
+                  </div>
+                </div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-green-deep"></span>
+                  <div>
+                    <strong>Forest</strong>
+                    <small>#2D6A52</small>
+                  </div>
+                </div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-charcoal"></span>
+                  <div>
+                    <strong>Charcoal</strong>
+                    <small>#26332E</small>
+                  </div>
                 </div>
               </div>
+            </article>
+
+            <article class="palette-panel dark-panel">
+              <div class="panel-head">
+                <h3>Dark mode</h3>
+                <span>High contrast / premium</span>
+              </div>
+
+              <div class="swatch-group">
+                <div class="swatch-card">
+                  <span class="swatch swatch-ink"></span>
+                  <div>
+                    <strong>Ink</strong>
+                    <small>#0F1714</small>
+                  </div>
+                </div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-green-dark"></span>
+                  <div>
+                    <strong>Emerald</strong>
+                    <small>#2F7A64</small>
+                  </div>
+                </div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-mint"></span>
+                  <div>
+                    <strong>Mint</strong>
+                    <small>#A9E7CD</small>
+                  </div>
+                </div>
+                <div class="swatch-card">
+                  <span class="swatch swatch-sand"></span>
+                  <div>
+                    <strong>Sand</strong>
+                    <small>#D9D4C7</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="accent-section">
+            <div class="section-heading inline-heading">
+              <p class="section-tag">Accent ideas</p>
+              <h3>Secondary colors that pair well with the green</h3>
+            </div>
+
+            <div class="accent-grid" aria-label="accent color samples">
+              <span class="accent-color accent-01"><em>Warm clay</em><small>#D98B5F</small></span>
+              <span class="accent-color accent-02"><em>Rose gold</em><small>#C98068</small></span>
+              <span class="accent-color accent-03"><em>Slate blue</em><small>#5C7489</small></span>
+              <span class="accent-color accent-04"><em>Soft lilac</em><small>#B5A8D9</small></span>
+              <span class="accent-color accent-05"><em>Champagne</em><small>#E8D7A6</small></span>
+              <span class="accent-color accent-06"><em>Citrus</em><small>#E7D66A</small></span>
+              <span class="accent-color accent-07"><em>Stone</em><small>#B5B9B1</small></span>
+              <span class="accent-color accent-08"><em>Terracotta</em><small>#A86352</small></span>
             </div>
           </div>
         </section>
 
-        <section id="features" class="feature-grid" aria-label="Feature overview">
-          <article class="feature-card">
-            <div class="icon">⚡</div>
-            <h3>Fast Setup</h3>
-            <p>Start from a clean foundation and move quickly with no clutter.</p>
-          </article>
+        <section id="type-showcase" class="type-section">
+          <div class="section-heading">
+            <p class="section-tag">Typography</p>
+            <h2>Font pairings and voice samples</h2>
+          </div>
 
-          <article class="feature-card">
-            <div class="icon">🎯</div>
-            <h3>Clear Messaging</h3>
-            <p>Focus on the value you provide with a straightforward layout.</p>
-          </article>
+          <div class="type-grid">
+            <article class="type-card">
+              <h3 class="inter-regular">Inter</h3>
+              <p class="inter-regular">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
 
-          <article class="feature-card">
-            <div class="icon">🚀</div>
-            <h3>Ready to Launch</h3>
-            <p>Designed to scale into a stronger product or portfolio presence.</p>
-          </article>
+            <article class="type-card">
+              <h3 class="host-grotesk-700">Host Grotesk</h3>
+              <p class="host-grotesk-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="roboto-condensed-700">Roboto Condensed</h3>
+              <p class="roboto-condensed-400">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="lora-700">Lora</h3>
+              <p class="lora-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="ibm-plex-sans-600">IBM Plex Sans</h3>
+              <p class="ibm-plex-sans-400">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="bricolage-grotesque-700">Bricolage Grotesque</h3>
+              <p class="bricolage-grotesque-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="josefin-sans-600">Josefin Sans</h3>
+              <p class="josefin-sans-400">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="montserrat-700">Montserrat</h3>
+              <p class="montserrat-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="big-shoulders-700">Big Shoulders</h3>
+              <p class="big-shoulders-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="archivo-black-regular">Archivo Black</h3>
+              <p class="archivo-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="fraunces-600">Fraunces</h3>
+              <p class="fraunces-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="oswald-600">Oswald</h3>
+              <p class="oswald-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="archivo-700">Archivo</h3>
+              <p class="archivo-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="overpass-700">Overpass</h3>
+              <p class="overpass-500">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="type-card">
+              <h3 class="cinzel-700">Cinzel</h3>
+              <p class="cinzel-600">Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="copy" class="copy-section">
+          <div class="section-heading">
+            <p class="section-tag">Messaging samples</p>
+            <h2>Copy for future apps</h2>
+          </div>
+
+          <div class="copy-grid">
+            <article class="copy-card">
+              <p>Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+
+            <article class="copy-card">
+              <p>Show other engineers your finished work, progress logs, and collaborations in a personal website portfolio.</p>
+            </article>
+
+            <article class="copy-card">
+              <p>Engineers build stuff, your stuff needs a portfolio.</p>
+            </article>
+
+            <article class="copy-card">
+              <p>Campus business management for people with on campus businesses.</p>
+            </article>
+          </div>
         </section>
       </main>
 
-      <footer id="contact" class="footer">
+      <footer class="footer">
         <p>© <span id="year"></span> dev.fathom</p>
       </footer>
     </div>
