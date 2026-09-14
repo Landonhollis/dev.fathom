@@ -3,107 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dev.fathom | Brand Routes</title>
+    <title>dev.fathom | Branding Gallery</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body class="theme-dark">
+  <body class="theme-dark gallery-shell">
     <div class="page">
       <header class="site-header">
-        <div class="brand" aria-label="dev.fathom brand">
-          <span class="brand-mark">f</span>
-          <span class="brand-name">dev.fathom</span>
+        <div class="brand-wrap">
+          <div class="brand" aria-label="Dev fathom brand">
+            <span class="brand-mark">f</span>
+            <span class="brand-name">dev.fathom</span>
+          </div>
         </div>
+
         <nav class="nav" aria-label="Main navigation">
-          <a href="/">Routes</a>
-          <a href="/light/wealth">Light fintech</a>
-          <a href="/dark/portfolio">Dark portfolio</a>
+          <a href="#overview">Overview</a>
+          <a href="#light-examples">Light</a>
+          <a href="#dark-examples">Dark</a>
+          <a href="#copy">Copy</a>
         </nav>
-        <button class="nav-cta" type="button">Brand board</button>
+
+        <button class="nav-cta" type="button">Brand gallery</button>
       </header>
 
       <main>
-        <section class="hero">
-          <div>
-            <p class="kicker">File-based routing demo</p>
-            <h1 class="display inter">Mockups mapped to real route paths.</h1>
-            <p class="lede">
-              Each page lives inside its own folder and is served by the actual file structure.
-              The URL is not a custom rewrite — it reflects the folder path itself.
+        <section id="overview" class="hero hero-intro">
+          <div class="hero-copy">
+            <p class="kicker">Brand direction gallery</p>
+            <h1 class="display inter">A cleaner way to compare real product directions.</h1>
+            <p class="lede inter">
+              This gallery is designed to show how the brand feels in context — not as isolated color squares.
+              Every example uses a real layout, a real message, and a real product mockup on screen.
             </p>
+
             <div class="cta-row">
-              <a class="primary-btn" href="/light/wealth">Open light mockup</a>
-              <a class="secondary-btn" href="/dark/portfolio">Open dark mockup</a>
+              <a class="primary-btn inter" href="#light-examples">Browse light concepts</a>
+              <a class="secondary-btn inter" href="#dark-examples">Browse dark concepts</a>
+            </div>
+
+            <div class="meta-strip inter">
+              <div>
+                <strong>6</strong>
+                <span>Concepts</span>
+              </div>
+              <div>
+                <strong>2</strong>
+                <span>Modes</span>
+              </div>
+              <div>
+                <strong>1</strong>
+                <span>Direction</span>
+              </div>
             </div>
           </div>
 
-          <aside class="hero-panel">
-            <div class="panel-window">
-              <div class="window-bar">
-                <span class="window-dot"></span>
-                <span class="window-dot"></span>
-                <span class="window-dot"></span>
-              </div>
-              <div class="panel-inner">
-                <div class="stat-badge">
-                  <div>
-                    <span>Route style</span>
-                    <strong>/light/wealth</strong>
-                  </div>
-                  <span>maps to</span>
+          <div class="hero-device">
+            <div class="device-frame">
+              <div class="device-notch"></div>
+              <div class="screen-screen">
+                <div class="mini-header">
+                  <span class="mini-logo">f</span>
+                  <span class="mini-text">Fathom</span>
                 </div>
-                <div class="swatch-grid">
-                  <div class="swatch-box" style="background: #F4F3EE;"></div>
-                  <div class="swatch-box" style="background: #2D6A52;"></div>
-                  <div class="swatch-box" style="background: #D98B5F;"></div>
-                  <div class="swatch-box" style="background: #0D1413;"></div>
+                <div class="mini-card green">
+                  <small>Projected cash</small>
+                  <strong>$168k</strong>
+                  <span>by 2030</span>
+                </div>
+                <div class="mini-grid">
+                  <div class="mini-tile"></div>
+                  <div class="mini-tile"></div>
+                  <div class="mini-tile wide"></div>
                 </div>
               </div>
             </div>
-          </aside>
+          </div>
         </section>
 
-        <section class="section">
+        <section id="light-examples" class="gallery-section">
           <div class="section-head">
             <div>
-              <p class="kicker">Routes</p>
-              <h2 class="section-title inter">Examples</h2>
+              <p class="kicker">Light mode</p>
+              <h2 class="section-title inter">Cleaner and more premium</h2>
             </div>
           </div>
 
-          <div class="route-grid">
-            <article class="route-card">
-              <div class="kicker">Light / fintech</div>
-              <h3 class="inter">/light/wealth</h3>
-              <div class="url">pages/light/wealth/index.html</div>
-              <p>Finance landing page for future planning, debt payoff, and long-term life milestones.</p>
-              <a class="route-link" href="/light/wealth">View page →</a>
+          <div class="example-grid">
+            <article class="gallery-card">
+              <div class="mini-label">Finance</div>
+              <h3 class="inter">Wealth planning</h3>
+              <div class="device-thumb light-device">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box large"></div>
+                  <div class="phone-box short"></div>
+                  <div class="phone-box small"></div>
+                </div>
+              </div>
+              <p class="inter">Long-term life planning, debt payoff, and milestone forecasting.</p>
+              <a href="/light/wealth">Open example →</a>
             </article>
 
-            <article class="route-card">
-              <div class="kicker">Dark / portfolio</div>
-              <h3 class="inter">/dark/portfolio</h3>
-              <div class="url">pages/dark/portfolio/index.html</div>
-              <p>Creative engineering portfolio for showcasing work, progress logs, and collaboration.</p>
-              <a class="route-link" href="/dark/portfolio">View page →</a>
+            <article class="gallery-card">
+              <div class="mini-label">Operations</div>
+              <h3 class="inter">Campus business</h3>
+              <div class="device-thumb light-device alt">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box long"></div>
+                  <div class="phone-box medium"></div>
+                  <div class="phone-box short"></div>
+                </div>
+              </div>
+              <p class="inter">Student-run businesses with simple dashboards and cash visibility.</p>
+              <a href="/light/campus">Open example →</a>
             </article>
 
-            <article class="route-card">
-              <div class="kicker">Light / campus</div>
-              <h3 class="inter">/light/campus</h3>
-              <div class="url">pages/light/campus/index.html</div>
-              <p>Simple campus business management platform for student-run products and services.</p>
-              <a class="route-link" href="/light/campus">View page →</a>
+            <article class="gallery-card">
+              <div class="mini-label">Creator</div>
+              <h3 class="inter">Portfolio brand</h3>
+              <div class="device-thumb light-device accent">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box tall"></div>
+                  <div class="phone-box medium"></div>
+                  <div class="phone-box small"></div>
+                </div>
+              </div>
+              <p class="inter">A portfolio-friendly direction for creators and builders.</p>
+              <a href="/light/creator">Open example →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="dark-examples" class="gallery-section">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Dark mode</p>
+              <h2 class="section-title inter">More complex and more editorial</h2>
+            </div>
+          </div>
+
+          <div class="example-grid">
+            <article class="gallery-card">
+              <div class="mini-label">Portfolio</div>
+              <h3 class="inter">Engineer portfolio</h3>
+              <div class="device-thumb dark-device">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box large dark-box"></div>
+                  <div class="phone-box short dark-box"></div>
+                  <div class="phone-box small dark-box"></div>
+                </div>
+              </div>
+              <p class="inter">Work, progress logs, and case studies presented with authority.</p>
+              <a href="/dark/portfolio">Open example →</a>
             </article>
 
-            <article class="route-card">
-              <div class="kicker">Dark / product</div>
-              <h3 class="inter">/dark/engineering</h3>
-              <div class="url">pages/dark/engineering/index.html</div>
-              <p>Engineering product page with a strong, high-contrast identity for building tools.</p>
-              <a class="route-link" href="/dark/engineering">View page →</a>
+            <article class="gallery-card">
+              <div class="mini-label">Product</div>
+              <h3 class="inter">Engineering platform</h3>
+              <div class="device-thumb dark-device alt">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box tall dark-box"></div>
+                  <div class="phone-box medium dark-box"></div>
+                  <div class="phone-box short dark-box"></div>
+                </div>
+              </div>
+              <p class="inter">A product-centered direction with more depth and contrast.</p>
+              <a href="/dark/engineering">Open example →</a>
+            </article>
+
+            <article class="gallery-card">
+              <div class="mini-label">SaaS</div>
+              <h3 class="inter">Product dashboard</h3>
+              <div class="device-thumb dark-device accent">
+                <div class="phone-topbar"></div>
+                <div class="phone-body">
+                  <div class="phone-headline"></div>
+                  <div class="phone-box large dark-box"></div>
+                  <div class="phone-box medium dark-box"></div>
+                  <div class="phone-box small dark-box"></div>
+                </div>
+              </div>
+              <p class="inter">A sharper product direction for analytics and internal tooling.</p>
+              <a href="/dark/saas">Open example →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="copy" class="gallery-section">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Copy samples</p>
+              <h2 class="section-title inter">Messaging tested in context</h2>
+            </div>
+          </div>
+
+          <div class="copy-grid">
+            <article class="copy-card inter">
+              <p>Compare financial futures, see when you can afford a house, kids, and get out of debt.</p>
+            </article>
+            <article class="copy-card inter">
+              <p>Show other engineers your finished work, progress logs, and collaborations in a personal website portfolio.</p>
+            </article>
+            <article class="copy-card inter">
+              <p>Engineers build stuff, your stuff needs a portfolio.</p>
+            </article>
+            <article class="copy-card inter">
+              <p>Campus business management for people with on campus businesses.</p>
             </article>
           </div>
         </section>
