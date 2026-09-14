@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dev.fathom | Brand Routes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="page">
+      <header class="site-header">
+        <div class="brand" aria-label="dev.fathom brand">
+          <span class="brand-mark">f</span>
+          <span class="brand-name">dev.fathom</span>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="/">Routes</a>
+          <a href="/light/wealth">Light fintech</a>
+          <a href="/dark/portfolio">Dark portfolio</a>
+        </nav>
+        <button class="nav-cta" type="button">Brand board</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="kicker">File-based routing demo</p>
+            <h1 class="display inter">Mockups mapped to real route paths.</h1>
+            <p class="lede">
+              Each page lives inside its own folder and is served by the actual file structure.
+              The URL is not a custom rewrite — it reflects the folder path itself.
+            </p>
+            <div class="cta-row">
+              <a class="primary-btn" href="/light/wealth">Open light mockup</a>
+              <a class="secondary-btn" href="/dark/portfolio">Open dark mockup</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <div class="panel-window">
+              <div class="window-bar">
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+                <span class="window-dot"></span>
+              </div>
+              <div class="panel-inner">
+                <div class="stat-badge">
+                  <div>
+                    <span>Route style</span>
+                    <strong>/light/wealth</strong>
+                  </div>
+                  <span>maps to</span>
+                </div>
+                <div class="swatch-grid">
+                  <div class="swatch-box" style="background: #F4F3EE;"></div>
+                  <div class="swatch-box" style="background: #2D6A52;"></div>
+                  <div class="swatch-box" style="background: #D98B5F;"></div>
+                  <div class="swatch-box" style="background: #0D1413;"></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <p class="kicker">Routes</p>
+              <h2 class="section-title inter">Examples</h2>
+            </div>
+          </div>
+
+          <div class="route-grid">
+            <article class="route-card">
+              <div class="kicker">Light / fintech</div>
+              <h3 class="inter">/light/wealth</h3>
+              <div class="url">pages/light/wealth/index.html</div>
+              <p>Finance landing page for future planning, debt payoff, and long-term life milestones.</p>
+              <a class="route-link" href="/light/wealth">View page →</a>
+            </article>
+
+            <article class="route-card">
+              <div class="kicker">Dark / portfolio</div>
+              <h3 class="inter">/dark/portfolio</h3>
+              <div class="url">pages/dark/portfolio/index.html</div>
+              <p>Creative engineering portfolio for showcasing work, progress logs, and collaboration.</p>
+              <a class="route-link" href="/dark/portfolio">View page →</a>
+            </article>
+
+            <article class="route-card">
+              <div class="kicker">Light / campus</div>
+              <h3 class="inter">/light/campus</h3>
+              <div class="url">pages/light/campus/index.html</div>
+              <p>Simple campus business management platform for student-run products and services.</p>
+              <a class="route-link" href="/light/campus">View page →</a>
+            </article>
+
+            <article class="route-card">
+              <div class="kicker">Dark / product</div>
+              <h3 class="inter">/dark/engineering</h3>
+              <div class="url">pages/dark/engineering/index.html</div>
+              <p>Engineering product page with a strong, high-contrast identity for building tools.</p>
+              <a class="route-link" href="/dark/engineering">View page →</a>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
